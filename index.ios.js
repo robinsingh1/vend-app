@@ -11,9 +11,13 @@ import {
   Text,
   View
 } from 'react-native';
+var Intercom = require('react-native-intercom');
 
 class vend extends Component {
   render() {
+    Intercom.logEvent('viewed_screen', { extra: 'metadata' });
+    Intercom.displayMessageComposer();
+
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>

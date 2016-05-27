@@ -61,4 +61,8 @@
   return YES;
 }
 
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+       [Intercom setDeviceToken:deviceToken];
+}
+
 @end
