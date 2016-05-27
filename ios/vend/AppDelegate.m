@@ -11,11 +11,14 @@
 #import "Intercom/intercom.h"
 
 #import "RCTRootView.h"
+#import <BuddyBuildSDK/BuddyBuildSDK.h>
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+  [BuddyBuildSDK setup];
+  
   NSURL *jsCodeLocation;
 
   /**
